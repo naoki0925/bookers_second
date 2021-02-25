@@ -1,0 +1,22 @@
+<div>
+  <div>
+    <div>
+      <h2>New ComiC</h2>
+      <%= form_with model: @book, local: true do |f| %>
+      <div>
+        <strong>TITLE</strong>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+      <div>
+        <strong>IMPRESSIONS</strong>
+        <%= f.label :body %>
+        <%= f.text_area :body %>
+      </div>
+      <div>
+        <%= f.submit 'Save' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
